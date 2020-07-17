@@ -1,5 +1,5 @@
 import React from 'react'
-import Slider from 'react-slick'
+// import Slider from 'react-slick'
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
@@ -12,13 +12,13 @@ export default ({ data }) => (
       <div className="sheet__inner">
         <h1 className="sheet__title">{data.datoCmsGame.title}</h1>
         <p className="sheet__lead">{data.datoCmsGame.excerpt}</p>
-        <div className="sheet__slider">
+        {/* <div className="sheet__slider">
           <Slider infinite={true} slidesToShow={2} arrows>
             {data.datoCmsGame.gallery.map(({ fluid }) => (
               <img alt={data.datoCmsGame.title} key={fluid.src} src={fluid.src} />
             ))}
           </Slider>
-        </div>
+        </div> */}
         <div
           className="sheet__body"
           dangerouslySetInnerHTML={{
